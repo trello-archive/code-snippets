@@ -6,7 +6,7 @@
   "author": "Matt Cowan <mcowan@atlassian.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && parcel build pages/*.html --public-url '.'",
+    "build": "rm -rf dist && parcel build pages/*.html --public-url '.' && yarn build-ts && yarn build-worker",
     "build-json": "parcel build node_modules/monaco-editor/esm/vs/language/json/json.worker.js --no-source-maps",
     "build-css": "parcel build node_modules/monaco-editor/esm/vs/language/css/css.worker.js --no-source-maps",
     "build-html": "parcel build node_modules/monaco-editor/esm/vs/language/html/html.worker.js --no-source-maps",
