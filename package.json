@@ -6,7 +6,7 @@
   "author": "Matt Cowan <mcowan@atlassian.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && parcel build pages/*.html",
+    "build": "rm -rf dist && parcel build pages/*.html --public-url '.'",
     "lint": "eslint scripts"
   },
   "dependencies": {
